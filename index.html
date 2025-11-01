@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turjo Sarker | Esports Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0c0c0c;
+      --text-color: #fff;
+      --accent-color: #00ffcc;
+      --secondary-color: #aaa;
+    }
+    .dark-mode {
+      --bg-color: #f4f4f4;
+      --text-color: #111;
+      --accent-color: #00b894;
+      --secondary-color: #555;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav {
+      background: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+    nav h1 {
+      font-size: 1.8em;
+      color: var(--accent-color);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: var(--accent-color);
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    header {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #111, #1a1a1a);
+    }
+    header h2 {
+      font-size: 3em;
+      color: var(--accent-color);
+      animation: fadeInDown 1s ease;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: var(--secondary-color);
+      animation: fadeInUp 1s ease;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: var(--accent-color);
+    }
+    .team-member, .contact-info {
+      margin-bottom: 20px;
+    }
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9em;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider img {
+      width: 300px;
+      border-radius: 10px;
+      scroll-snap-align: start;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>OLD FALCON</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="toggle-btn" onclick="toggleDarkMode()"><i class="fas fa-adjust"></i></button>
+  </nav>
+
+  <header>
+    <h2>Turjo Sarker</h2>
+    <p>Sniper Artist | Free Fire | Team OLD CLASHERS</p>
+  </header>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I’m <strong>Turjo Sarker</strong>, known in-game as <strong>OLD FALCON</strong>. I’m a professional sniper player in the Free Fire esports community, part of the elite squad <strong>OLD CLASHERS</strong>. Passion, precision, and performance define my gameplay style.</p>
+  </section>
+
+  <section id="team">
+  <h3>About My Team</h3>
+  <p><strong>OLD CLASHERS</strong> is a top-tier Free Fire esports team known for its tight coordination, strategic plays, and consistent tournament performance.</p>
+
+  <br>
+
+  
+
+  <div class="team-member">
+    <strong>Leader: OLD OCEAN (Mridul Khan)</strong><br>
+    Role: Main Rusher<br>
+    Description: As the team captain and frontline attacker, OLD OCEAN is fearless in close-range battles. Known for his fast reflexes and strategic push plays, he often leads aggressive charges and opens up enemy defenses with precision.
+  </div>
+
+  <div class="team-member">
+    <strong>2nd Rusher: OLD XENON (Muhammad Sajim)</strong><br>
+    Role: Flank & Pressure<br>
+    Description: OLD XENON specializes in flanking and side-pressure tactics. His unpredictable movement and excellent map awareness make him a nightmare for opponents trying to defend from multiple angles.
+  </div>
+
+  <div class="team-member">
+    <strong>Support: OLD SUHAIL (Suhail Ahmed Sami)</strong><br>
+    Role: Backup & Utility<br>
+    Description: The backbone of the squad, OLD SUHAIL provides essential healing, cover fire, and glue wall tactics during clashes. Calm under pressure, he ensures the team survives tough fights and regroups smoothly when needed.
+  </div>
+
+  <div class="team-member">
+    <strong>Sniper: OLD FALCON (Turjo Sarker)</strong><br>
+    Role: Long-range Damage & Info<br>
+    Description: The team’s sharpshooter, OLD FALCON picks off enemies from afar with deadly accuracy. He controls high ground and provides vital intel about enemy positions, turning the tide of battles with one shot.
+  </div>
+</section>
+
+</section>
+
+  </section>
+
+  <section id="achievements">
+    <h3>Achievements</h3>
+    <ul>
+      <li>Top 3 in National Esports Sniper Cup 2024</li>
+      <li>Ranked #1 Sniper in Regional Leaderboard (Season 31)</li>
+      <li>5x MVP Awards in Tournaments</li>
+    </ul>
+
+    <h3 style="margin-top:40px;">Highlights</h3>
+    <iframe src="https://youtu.be/fP7weXxxHB0?si=ODwXH7loT6AnSLyp" allowfullscreen></iframe>
+
+    <h3 style="margin-top:40px;">Gallery</h3>
+    <div class="slider">
+      <img src="https://www.facebook.com/61572308415795/posts/29305616775718622/?substory_index=29305616775718622&mibextid=rS40aB7S9Ucbxw6v" alt="Match 1">
+      <img src="https://via.placeholder.com/300x200?text=Match+2" alt="Match 2">
+      <img src="https://via.placeholder.com/300x200?text=Team+Victory" alt="Victory">
+    </div>
+  </section>
+
+<section id="contact" style="background: #0c0c0c; padding: 80px 20px;">
+  <h3 style="text-align: center; color: #fff; font-size: 2.5em; text-shadow: 2px 2px #00ffcc; margin-bottom: 40px;">CONTACT ME</h3>
+
+  <form id="contact-form" style="
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,255,204,0.2);
+  ">
+    <label style="color: #00ffcc; font-weight: 600;">Your name:</label>
+    <input type="text" name="name" placeholder="Enter your name" required style="width: 100%; padding: 12px; margin: 10px 0 20px; border: none; border-bottom: 2px solid #00ffcc; background: transparent; color: #fff; font-size: 1em;">
+
+    <label style="color: #00ffcc; font-weight: 600;">Your Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 12px; margin: 10px 0 20px; border: none; border-bottom: 2px solid #00ffcc; background: transparent; color: #fff; font-size: 1em;">
+
+    <label style="color: #00ffcc; font-weight: 600;">Subject:</label>
+    <input type="text" name="subject" placeholder="Subject" style="width: 100%; padding: 12px; margin: 10px 0 20px; border: none; border-bottom: 2px solid #00ffcc; background: transparent; color: #fff; font-size: 1em;">
+
+    <label style="color: #00ffcc; font-weight: 600;">Your message:</label>
+    <textarea name="message" placeholder="Type your message here..." rows="5" required style="width: 100%; padding: 12px; margin: 10px 0 30px; border: 2px solid #00ffcc; border-radius: 10px; background: transparent; color: #fff; font-size: 1em; resize: vertical;"></textarea>
+
+    <button type="submit" id="send-btn" style="background: linear-gradient(135deg, #00ffcc, #00b894); border: none; padding: 12px 30px; color: #000; font-weight: bold; border-radius: 30px; cursor: pointer; font-size: 1.1em; transition: background 0.3s ease;">Send</button>
+  </form>
+</section>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("VYKK057zR_OaMB7bb"); // Your Public Key
+  })();
+
+  const form = document.getElementById("contact-form");
+  const button = document.getElementById("send-btn");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    button.disabled = true;
+    button.textContent = "Sending...";
+
+    emailjs.sendForm('service_vs72qje', 'template_vm9bbht', this)
+      .then(function() {
+        button.textContent = "Sent!";
+        form.reset();
+        setTimeout(() => {
+          button.textContent = "Send";
+          button.disabled = false;
+        }, 2000);
+      }, function(error) {
+        button.textContent = "Failed. Try again";
+        setTimeout(() => {
+          button.textContent = "Send";
+          button.disabled = false;
+        }, 3000);
+      });
+  });
+</script>
+
+</section>
+
+    <h3>Contact Me</h3>
+    <div class="contact-info">Email: <a href="mailto:tsturjo57@gmail.com">tsturjo57@gmail.com</a></div>
+    <div class="contact-info">Instagram: <a href="https://www.instagram.com/old_falcon_24" target="_blank">@old_falcon_24</a></div>
+    <div class="contact-info">Facebook: <a href="https://www.facebook.com/turjo.sarker.988277" target="_blank">Turjo Sarker</a></div>
+    <div class="social-icons">
+      <a href="mailto:tsturjo2009@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/old_falcon_24" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href ="https://www.facebook.com/turjo.sarker.988277"target="blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Turjo Sarker | OLD FALCON | All rights reserved.
+  </footer>
+
+  <script>
+    // Scroll to top on load
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
